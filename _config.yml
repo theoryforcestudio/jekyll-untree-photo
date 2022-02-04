@@ -24,3 +24,4 @@ exclude:
   - .jekyll-cache/
   - Gemfile
   - Gemfile.lock
+  - README.md
