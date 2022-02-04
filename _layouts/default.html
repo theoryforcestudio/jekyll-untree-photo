@@ -1,0 +1,82 @@
+<!-- /*
+* Template Name: UntreePhoto
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    {% include header.html %}
+
+    <div class="container py-5" data-aos="fade">
+      <div class="row">
+        <div class="col-lg-7 mx-auto text-center">
+          {{ content }}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="site-section pt-0 pb-0"  data-aos="fade">
+      <div class="container-fluid">
+        <div class="row" id="lightgallery">
+
+          {% for item in page.gallery %}
+          {% include gallery-item.html %}
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+
+
+    {% include footer.html %}
+
+  </div>
+
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/js/jquery-ui.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/jquery.stellar.min.js"></script>
+  <script src="/js/jquery.countdown.min.js"></script>
+  <script src="/js/jquery.magnific-popup.min.js"></script>
+  <script src="/js/bootstrap-datepicker.min.js"></script>
+  <script src="/js/swiper.min.js"></script>
+  <script src="/js/aos.js"></script>
+  <script src="/js/lozad.min.js"></script>
+
+  <script src="/js/picturefill.min.js"></script>
+  <script src="/js/lightgallery-all.min.js"></script>
+  <script src="/js/jquery.mousewheel.min.js"></script>
+
+  <script src="/js/main.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+
+    });
+
+  </script>
+
+</body>
+</html>
