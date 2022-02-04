@@ -2,6 +2,10 @@
 
 This is the UntreePhoto HTML template transformed into a Jekyll theme.
 
+## Demo
+
+http://sugarcandy.cz/
+
 ![](screenshot.jpg)
 
 # Get started
